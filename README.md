@@ -50,12 +50,12 @@ This project explores the factors that contribute to **Emergency Room (ER) wait 
 
 ---
 
-## 📷 Dashboard Preview
+## Dashboard Preview
 <img width="1363" height="759" alt="image" src="https://github.com/user-attachments/assets/8717065c-a1c6-4ffb-b9a8-9cad413c4875" />
 
 ---
 
-## 🙋 About Me
+## About Me
 **Armaan Patel**  
 Aspiring data analyst and project management enthusiast with hands-on experience in healthcare projects, backend development, and dashboard design.
 
