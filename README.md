@@ -38,3 +38,27 @@ This project explores the factors that contribute to **Emergency Room (ER) wait 
 - Increase staffing during **peak times** (e.g., Mondays, evenings, winter)
 - Launch **public education campaigns** on injury prevention
 - Consider **automated triage tools** to better prioritize patients
+
+---
+
+## Project Files
+- ER Database Analysis.ipynb
+- ER Wait Time Data Overview.txt
+- ER Wait Time Dataset.csv
+- ERWaitTimesBook.twb
+- Reducing ER Wait Times Project Analysis + Documentation.pdf
+
+---
+
+## 📷 Dashboard Preview
+<img width="1363" height="759" alt="image" src="https://github.com/user-attachments/assets/8717065c-a1c6-4ffb-b9a8-9cad413c4875" />
+
+---
+
+## 🙋 About Me
+**Armaan Patel**  
+Aspiring data analyst and project management enthusiast with hands-on experience in healthcare projects, backend development, and dashboard design.
+
+---
+
+> *Note: This project uses synthetic data and is intended for educational purposes only.*
