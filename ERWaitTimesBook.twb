@@ -1,0 +1,2389 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='ER Wait Time Dataset' inline='true' name='federated.0v5mc5y1fcl5tv10iaakz17dxc2m' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ER Wait Time Dataset' name='textscan.0au80o41k5367v17y3y8i0ap73l4'>
+            <connection class='textscan' directory='C:/Users/Iamsc/OneDrive/Desktop/ER Wait Times Data Analyst Project' filename='ER Wait Time Dataset.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0au80o41k5367v17y3y8i0ap73l4' name='ER Wait Time Dataset.csv' table='[ER Wait Time Dataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Visit ID' ordinal='0' />
+            <column datatype='string' name='Patient ID' ordinal='1' />
+            <column datatype='string' name='Hospital ID' ordinal='2' />
+            <column datatype='string' name='Hospital Name' ordinal='3' />
+            <column datatype='string' name='Region' ordinal='4' />
+            <column datatype='datetime' name='Visit Date' ordinal='5' />
+            <column datatype='string' name='Day of Week' ordinal='6' />
+            <column datatype='string' name='Season' ordinal='7' />
+            <column datatype='string' name='Time of Day' ordinal='8' />
+            <column datatype='string' name='Urgency Level' ordinal='9' />
+            <column datatype='integer' name='Nurse-to-Patient Ratio' ordinal='10' />
+            <column datatype='integer' name='Specialist Availability' ordinal='11' />
+            <column datatype='integer' name='Facility Size (Beds)' ordinal='12' />
+            <column datatype='integer' name='Time to Registration (min)' ordinal='13' />
+            <column datatype='integer' name='Time to Triage (min)' ordinal='14' />
+            <column datatype='integer' name='Time to Medical Professional (min)' ordinal='15' />
+            <column datatype='integer' name='Total Wait Time (min)' ordinal='16' />
+            <column datatype='string' name='Patient Outcome' ordinal='17' />
+            <column datatype='integer' name='Patient Satisfaction' ordinal='18' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ER Wait Time Dataset.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Visit ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Visit ID]</local-name>
+            <parent-name>[ER Wait Time Dataset.csv]</parent-name>
+            <remote-alias>Visit ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patient ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Patient ID]</local-name>
+            <parent-name>[ER Wait Time Dataset.csv]</parent-name>
+            <remote-alias>Patient ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hospital ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Hospital ID]</local-name>
+            <parent-name>[ER Wait Time Dataset.csv]</parent-name>
+            <remote-alias>Hospital ID</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hospital Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Hospital Name]</local-name>
+            <parent-name>[ER Wait Time Dataset.csv]</parent-name>
+            <remote-alias>Hospital Name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[ER Wait Time Dataset.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Visit Date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Visit Date]</local-name>
+            <parent-name>[ER Wait Time Dataset.csv]</parent-name>
+            <remote-alias>Visit Date</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Day of Week</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Day of Week]</local-name>
+            <parent-name>[ER Wait Time Dataset.csv]</parent-name>
+            <remote-alias>Day of Week</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Season</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Season]</local-name>
+            <parent-name>[ER Wait Time Dataset.csv]</parent-name>
+            <remote-alias>Season</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time of Day</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Time of Day]</local-name>
+            <parent-name>[ER Wait Time Dataset.csv]</parent-name>
+            <remote-alias>Time of Day</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Urgency Level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Urgency Level]</local-name>
+            <parent-name>[ER Wait Time Dataset.csv]</parent-name>
+            <remote-alias>Urgency Level</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nurse-to-Patient Ratio</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Nurse-to-Patient Ratio]</local-name>
+            <parent-name>[ER Wait Time Dataset.csv]</parent-name>
+            <remote-alias>Nurse-to-Patient Ratio</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Specialist Availability</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Specialist Availability]</local-name>
+            <parent-name>[ER Wait Time Dataset.csv]</parent-name>
+            <remote-alias>Specialist Availability</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Facility Size (Beds)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Facility Size (Beds)]</local-name>
+            <parent-name>[ER Wait Time Dataset.csv]</parent-name>
+            <remote-alias>Facility Size (Beds)</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time to Registration (min)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Time to Registration (min)]</local-name>
+            <parent-name>[ER Wait Time Dataset.csv]</parent-name>
+            <remote-alias>Time to Registration (min)</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time to Triage (min)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Time to Triage (min)]</local-name>
+            <parent-name>[ER Wait Time Dataset.csv]</parent-name>
+            <remote-alias>Time to Triage (min)</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time to Medical Professional (min)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Time to Medical Professional (min)]</local-name>
+            <parent-name>[ER Wait Time Dataset.csv]</parent-name>
+            <remote-alias>Time to Medical Professional (min)</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Wait Time (min)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Wait Time (min)]</local-name>
+            <parent-name>[ER Wait Time Dataset.csv]</parent-name>
+            <remote-alias>Total Wait Time (min)</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patient Outcome</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Patient Outcome]</local-name>
+            <parent-name>[ER Wait Time Dataset.csv]</parent-name>
+            <remote-alias>Patient Outcome</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patient Satisfaction</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Patient Satisfaction]</local-name>
+            <parent-name>[ER Wait Time Dataset.csv]</parent-name>
+            <remote-alias>Patient Satisfaction</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Nurse-to-Patient Ratio (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Nurse-to-Patient Ratio]' new-bin='true' />
+      </column>
+      <column datatype='integer' name='[Nurse-to-Patient Ratio]' role='measure' type='quantitative' />
+      <column caption='Patient Satisfaction' datatype='string' name='[Patient Satisfaction (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Patient Satisfaction]' new-bin='true' />
+      </column>
+      <column caption='Patient Satisfaction (numerical)' datatype='integer' name='[Patient Satisfaction]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Season]' role='dimension' type='nominal' />
+      <column caption='Specialist Availability' datatype='string' name='[Specialist Availability (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Specialist Availability]' new-bin='true' />
+      </column>
+      <column caption='Specialist Availability (numerical)' datatype='integer' name='[Specialist Availability]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Time of Day]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Urgency Level]' role='dimension' type='nominal' />
+      <column caption='ER Wait Time Dataset.csv' datatype='table' name='[__tableau_internal_object_id__].[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]' role='measure' type='quantitative' />
+      <column-instance column='[Patient Satisfaction]' derivation='Count' name='[cnt:Patient Satisfaction:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Patient Satisfaction]' derivation='CountD' name='[ctd:Patient Satisfaction:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Season]' derivation='None' name='[none:Season:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Time of Day]' derivation='None' name='[none:Time of Day:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Urgency Level]' derivation='None' name='[none:Urgency Level:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Patient Satisfaction]' derivation='Sum' name='[sum:Patient Satisfaction:ok]' pivot='key' type='ordinal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Iamsc/AppData/Local/Temp/TableauTemp/#TableauTemp_0jjcip41vbbtkz1192g360qofsfo.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/08/2025 04:09:23 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Visit ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Visit ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Visit ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>ER Wait Time Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Patient ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Patient ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Patient ID</remote-alias>
+              <ordinal>1</ordinal>
+              <family>ER Wait Time Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hospital ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Hospital ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Hospital ID</remote-alias>
+              <ordinal>2</ordinal>
+              <family>ER Wait Time Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hospital Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Hospital Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Hospital Name</remote-alias>
+              <ordinal>3</ordinal>
+              <family>ER Wait Time Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>4</ordinal>
+              <family>ER Wait Time Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Visit Date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Visit Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Visit Date</remote-alias>
+              <ordinal>5</ordinal>
+              <family>ER Wait Time Dataset.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>5000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Day of Week</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Day of Week]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Day of Week</remote-alias>
+              <ordinal>6</ordinal>
+              <family>ER Wait Time Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Season</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Season]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Season</remote-alias>
+              <ordinal>7</ordinal>
+              <family>ER Wait Time Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Time of Day</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Time of Day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Time of Day</remote-alias>
+              <ordinal>8</ordinal>
+              <family>ER Wait Time Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Urgency Level</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Urgency Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Urgency Level</remote-alias>
+              <ordinal>9</ordinal>
+              <family>ER Wait Time Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Nurse-to-Patient Ratio</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Nurse-to-Patient Ratio]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Nurse-to-Patient Ratio</remote-alias>
+              <ordinal>10</ordinal>
+              <family>ER Wait Time Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Specialist Availability</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Specialist Availability]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Specialist Availability</remote-alias>
+              <ordinal>11</ordinal>
+              <family>ER Wait Time Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Facility Size (Beds)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Facility Size (Beds)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Facility Size (Beds)</remote-alias>
+              <ordinal>12</ordinal>
+              <family>ER Wait Time Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>199</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Time to Registration (min)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Time to Registration (min)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Time to Registration (min)</remote-alias>
+              <ordinal>13</ordinal>
+              <family>ER Wait Time Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Time to Triage (min)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Time to Triage (min)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Time to Triage (min)</remote-alias>
+              <ordinal>14</ordinal>
+              <family>ER Wait Time Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>128</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Time to Medical Professional (min)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Time to Medical Professional (min)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Time to Medical Professional (min)</remote-alias>
+              <ordinal>15</ordinal>
+              <family>ER Wait Time Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>173</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Wait Time (min)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total Wait Time (min)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Wait Time (min)</remote-alias>
+              <ordinal>16</ordinal>
+              <family>ER Wait Time Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>299</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Patient Outcome</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Patient Outcome]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Patient Outcome</remote-alias>
+              <ordinal>17</ordinal>
+              <family>ER Wait Time Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Patient Satisfaction</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Patient Satisfaction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Patient Satisfaction</remote-alias>
+              <ordinal>18</ordinal>
+              <family>ER Wait Time Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[cnt:Patient Satisfaction:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>1868</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>253</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>2879</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[sum:Patient Satisfaction:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>1868</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>253</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>6311</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>2879</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>7294</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[ctd:Patient Satisfaction:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>1868</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>253</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>6311</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>2879</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>7294</bucket>
+            </map>
+          </encoding>
+          <encoding attr='shape' field='[none:Urgency Level:nk]' type='shape'>
+            <map to='circle'>
+              <bucket>&quot;Critical&quot;</bucket>
+            </map>
+            <map to='plus'>
+              <bucket>&quot;Medium&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;High&quot;</bucket>
+            </map>
+            <map to='times'>
+              <bucket>&quot;Low&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Time of Day:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Afternoon&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Night&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Late Morning&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Evening&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Early Morning&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Region:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Rural&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Urban&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Season:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Fall&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Winter&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Summer&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Spring&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Urgency Level:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Low&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Critical&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;High&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Medium&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='ER Wait Time Dataset.csv' id='ER Wait Time Dataset.csv_4125E75DF16F4BD1A47F6B75F99B176E'>
+            <properties context=''>
+              <relation connection='textscan.0au80o41k5367v17y3y8i0ap73l4' name='ER Wait Time Dataset.csv' table='[ER Wait Time Dataset#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Visit ID' ordinal='0' />
+                  <column datatype='string' name='Patient ID' ordinal='1' />
+                  <column datatype='string' name='Hospital ID' ordinal='2' />
+                  <column datatype='string' name='Hospital Name' ordinal='3' />
+                  <column datatype='string' name='Region' ordinal='4' />
+                  <column datatype='datetime' name='Visit Date' ordinal='5' />
+                  <column datatype='string' name='Day of Week' ordinal='6' />
+                  <column datatype='string' name='Season' ordinal='7' />
+                  <column datatype='string' name='Time of Day' ordinal='8' />
+                  <column datatype='string' name='Urgency Level' ordinal='9' />
+                  <column datatype='integer' name='Nurse-to-Patient Ratio' ordinal='10' />
+                  <column datatype='integer' name='Specialist Availability' ordinal='11' />
+                  <column datatype='integer' name='Facility Size (Beds)' ordinal='12' />
+                  <column datatype='integer' name='Time to Registration (min)' ordinal='13' />
+                  <column datatype='integer' name='Time to Triage (min)' ordinal='14' />
+                  <column datatype='integer' name='Time to Medical Professional (min)' ordinal='15' />
+                  <column datatype='integer' name='Total Wait Time (min)' ordinal='16' />
+                  <column datatype='string' name='Patient Outcome' ordinal='17' />
+                  <column datatype='integer' name='Patient Satisfaction' ordinal='18' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Average Wait Time per Day of Week and Season'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Wait Time per Day of Week and Season</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ER Wait Time Dataset' name='federated.0v5mc5y1fcl5tv10iaakz17dxc2m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0v5mc5y1fcl5tv10iaakz17dxc2m'>
+            <column datatype='string' name='[Day of Week]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Season]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total Wait Time (min)]' role='measure' type='quantitative' />
+            <column-instance column='[Total Wait Time (min)]' derivation='Avg' name='[avg:Total Wait Time (min):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Day of Week]' derivation='None' name='[none:Day of Week:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Season]' derivation='None' name='[none:Season:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <natural-sort column='[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Day of Week:nk]' direction='ASC' />
+          <manual-sort column='[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Season:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Fall&quot;</bucket>
+              <bucket>&quot;Summer&quot;</bucket>
+              <bucket>&quot;Spring&quot;</bucket>
+              <bucket>&quot;Winter&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Season:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Day of Week:nk]</rows>
+        <cols>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[avg:Total Wait Time (min):qk]</cols>
+      </table>
+      <simple-id uuid='{1A562449-1D9F-4075-A38B-A39E22393BC5}' />
+    </worksheet>
+    <worksheet name='Average Wait Time per Urgency Level and Time of Day'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Wait Time per Urgency Level and Time of Day</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ER Wait Time Dataset' name='federated.0v5mc5y1fcl5tv10iaakz17dxc2m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0v5mc5y1fcl5tv10iaakz17dxc2m'>
+            <column datatype='string' name='[Time of Day]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total Wait Time (min)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Urgency Level]' role='dimension' type='nominal' />
+            <column-instance column='[Total Wait Time (min)]' derivation='Avg' name='[avg:Total Wait Time (min):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Time of Day]' derivation='None' name='[none:Time of Day:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Urgency Level]' derivation='None' name='[none:Urgency Level:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Time of Day:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Early Morning&quot;</bucket>
+              <bucket>&quot;Late Morning&quot;</bucket>
+              <bucket>&quot;Afternoon&quot;</bucket>
+              <bucket>&quot;Evening&quot;</bucket>
+              <bucket>&quot;Night&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <manual-sort column='[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Urgency Level:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Low&quot;</bucket>
+              <bucket>&quot;Medium&quot;</bucket>
+              <bucket>&quot;High&quot;</bucket>
+              <bucket>&quot;Critical&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Time of Day:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[avg:Total Wait Time (min):qk]</rows>
+        <cols>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Urgency Level:nk]</cols>
+      </table>
+      <simple-id uuid='{8D1F4B57-15D2-48E8-9389-B30458591F93}' />
+    </worksheet>
+    <worksheet name='Average Wait Time vs Patient Satisfaction and Urgency Level'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Wait Time vs Patient Satisfaction and Urgency Level</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ER Wait Time Dataset' name='federated.0v5mc5y1fcl5tv10iaakz17dxc2m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0v5mc5y1fcl5tv10iaakz17dxc2m'>
+            <column caption='Patient Satisfaction' datatype='string' name='[Patient Satisfaction (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Patient Satisfaction]' new-bin='true' />
+            </column>
+            <column caption='Patient Satisfaction (numerical)' datatype='integer' name='[Patient Satisfaction]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Wait Time (min)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Urgency Level]' role='dimension' type='nominal' />
+            <column-instance column='[Total Wait Time (min)]' derivation='Avg' name='[avg:Total Wait Time (min):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Urgency Level]' derivation='None' name='[none:Urgency Level:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Urgency Level:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Critical&quot;</bucket>
+              <bucket>&quot;High&quot;</bucket>
+              <bucket>&quot;Medium&quot;</bucket>
+              <bucket>&quot;Low&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Urgency Level:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[avg:Total Wait Time (min):qk]</rows>
+        <cols>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[Patient Satisfaction (group)]</cols>
+      </table>
+      <simple-id uuid='{63540F26-C62B-45AD-BFA4-725937D8252C}' />
+    </worksheet>
+    <worksheet name='Average Wait Time vs Specialist Availability and Region'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Wait Time vs Specialist Availability and Region</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ER Wait Time Dataset' name='federated.0v5mc5y1fcl5tv10iaakz17dxc2m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0v5mc5y1fcl5tv10iaakz17dxc2m'>
+            <column caption='Specialist Availability' datatype='string' name='[Specialist Availability (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Specialist Availability]' new-bin='true' />
+            </column>
+            <column caption='Specialist Availability (numerical)' datatype='integer' name='[Specialist Availability]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Total Wait Time (min)]' role='measure' type='quantitative' />
+            <column-instance column='[Total Wait Time (min)]' derivation='Avg' name='[avg:Total Wait Time (min):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[avg:Total Wait Time (min):qk]</rows>
+        <cols>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[Specialist Availability (group)]</cols>
+      </table>
+      <simple-id uuid='{C56D0626-D5D3-4A91-AC39-75EB6401092C}' />
+    </worksheet>
+    <worksheet name='Average Wait Times per Hospital and Region'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Wait Times per Hospital and Region</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ER Wait Time Dataset' name='federated.0v5mc5y1fcl5tv10iaakz17dxc2m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0v5mc5y1fcl5tv10iaakz17dxc2m'>
+            <column datatype='string' name='[Hospital Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total Wait Time (min)]' role='measure' type='quantitative' />
+            <column-instance column='[Total Wait Time (min)]' derivation='Avg' name='[avg:Total Wait Time (min):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Hospital Name]' derivation='None' name='[none:Hospital Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Hospital Name:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Summit Health Center&quot;</bucket>
+              <bucket>&quot;Northside Community Hospital&quot;</bucket>
+              <bucket>&quot;Riverside Medical Center&quot;</bucket>
+              <bucket>&quot;St. Mary’s Regional Health&quot;</bucket>
+              <bucket>&quot;Springfield General Hospital&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Region:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[avg:Total Wait Time (min):qk]</rows>
+        <cols>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Hospital Name:nk]</cols>
+      </table>
+      <simple-id uuid='{4E472E08-B004-4B3B-A1DA-B5C6B8F33AB7}' />
+    </worksheet>
+    <worksheet name='Average Wait Times vs Patient Outcome and Urgency Level'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Wait Times vs Patient Outcome and Urgency Level</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ER Wait Time Dataset' name='federated.0v5mc5y1fcl5tv10iaakz17dxc2m' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0v5mc5y1fcl5tv10iaakz17dxc2m'>
+            <column datatype='string' name='[Patient Outcome]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total Wait Time (min)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Urgency Level]' role='dimension' type='nominal' />
+            <column-instance column='[Total Wait Time (min)]' derivation='Avg' name='[avg:Total Wait Time (min):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Patient Outcome]' derivation='None' name='[none:Patient Outcome:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Urgency Level]' derivation='None' name='[none:Urgency Level:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Urgency Level:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Critical&quot;</bucket>
+              <bucket>&quot;High&quot;</bucket>
+              <bucket>&quot;Medium&quot;</bucket>
+              <bucket>&quot;Low&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Urgency Level:nk]' value='53' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Urgency Level:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[avg:Total Wait Time (min):qk]</rows>
+        <cols>([federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Patient Outcome:nk] / [federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Urgency Level:nk])</cols>
+      </table>
+      <simple-id uuid='{69CFD2B1-E06F-4108-94C6-1FE469BD332F}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97916' id='18' param='horz' type-v2='layout-flow' w='98828' x='586' y='1042'>
+            <zone h='97916' id='9' param='horz' type-v2='layout-flow' w='98828' x='586' y='1042'>
+              <zone h='97916' id='7' type-v2='layout-basic' w='98828' x='586' y='1042'>
+                <zone h='40104' id='5' name='Average Wait Time per Day of Week and Season' w='28770' x='43851' y='58854'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='57812' id='11' name='Average Wait Time per Urgency Level and Time of Day' w='26793' x='72621' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='57812' id='13' name='Average Wait Times per Hospital and Region' w='43265' x='586' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='40104' id='15' name='Average Wait Times vs Patient Outcome and Urgency Level' w='43265' x='586' y='58854'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='57812' id='16' name='Average Wait Time vs Patient Satisfaction and Urgency Level' w='28770' x='43851' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='40104' id='20' name='Average Wait Time vs Specialist Availability and Region' w='26793' x='72621' y='58854'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1750' minheight='1750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='36' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='35' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+                <zone fixed-size='280' h='57812' id='13' is-fixed='true' name='Average Wait Times per Hospital and Region' w='43265' x='586' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='57812' id='16' is-fixed='true' name='Average Wait Time vs Patient Satisfaction and Urgency Level' w='28770' x='43851' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='57812' id='11' is-fixed='true' name='Average Wait Time per Urgency Level and Time of Day' w='26793' x='72621' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40104' id='15' is-fixed='true' name='Average Wait Times vs Patient Outcome and Urgency Level' w='43265' x='586' y='58854'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40104' id='5' is-fixed='true' name='Average Wait Time per Day of Week and Season' w='28770' x='43851' y='58854'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40104' id='20' is-fixed='true' name='Average Wait Time vs Specialist Availability and Region' w='26793' x='72621' y='58854'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{514E3B27-334F-45DC-8680-D18C5D042A72}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Average Wait Time per Day of Week and Season'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Season:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Day of Week:nk]</field>
+            <field>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Season:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{14ACEA8E-A774-4E14-8EEC-E621BC14E2A6}' />
+    </window>
+    <window class='worksheet' name='Average Wait Time per Urgency Level and Time of Day'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Time of Day:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Time of Day:nk]</field>
+            <field>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Urgency Level:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{463119DE-51D8-488E-A1BC-05469F49D07A}' />
+    </window>
+    <window class='worksheet' name='Average Wait Times per Hospital and Region'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Region:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[Patient Satisfaction (group)]</field>
+            <field>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Hospital Name:nk]</field>
+            <field>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Patient Outcome:nk]</field>
+            <field>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Region:nk]</field>
+            <field>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Season:nk]</field>
+            <field>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Urgency Level:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{213808A8-3F54-4725-9A6E-BB95CE6060CB}' />
+    </window>
+    <window class='worksheet' name='Average Wait Times vs Patient Outcome and Urgency Level'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Urgency Level:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[ctd:Patient Satisfaction:ok]</field>
+            <field>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Day of Week:nk]</field>
+            <field>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Hospital ID:nk]</field>
+            <field>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Patient Outcome:nk]</field>
+            <field>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Region:nk]</field>
+            <field>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Time of Day:nk]</field>
+            <field>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Urgency Level:nk]</field>
+            <field>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[yr:Visit Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{69D572A0-AC0C-42E5-85EE-B4D1395D05DE}' />
+    </window>
+    <window class='worksheet' name='Average Wait Time vs Patient Satisfaction and Urgency Level'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Urgency Level:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[Nurse-to-Patient Ratio (group)]</field>
+            <field>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[Patient Satisfaction (group)]</field>
+            <field>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Hospital Name:nk]</field>
+            <field>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Region:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{834BECB2-EB26-43FF-8DA8-99BFD69EB701}' />
+    </window>
+    <window class='worksheet' name='Average Wait Time vs Specialist Availability and Region'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[Patient Satisfaction (group)]</field>
+            <field>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[Specialist Availability (group)]</field>
+            <field>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[avg:Total Wait Time (min):ok]</field>
+            <field>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Day of Week:nk]</field>
+            <field>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Patient Outcome:nk]</field>
+            <field>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Region:nk]</field>
+            <field>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Season:nk]</field>
+            <field>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Time of Day:nk]</field>
+            <field>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Urgency Level:nk]</field>
+            <field>[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[yr:Visit Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4220C45F-DE70-4924-BD92-ACFAC1F4E656}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Average Wait Time per Day of Week and Season'>
+          <highlight field='[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Season:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Average Wait Time per Urgency Level and Time of Day'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.0v5mc5y1fcl5tv10iaakz17dxc2m].[none:Time of Day:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Average Wait Time vs Patient Satisfaction and Urgency Level'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Average Wait Time vs Specialist Availability and Region'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Average Wait Times per Hospital and Region'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Average Wait Times vs Patient Outcome and Urgency Level'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{ECB26C4C-7298-43D1-A65A-FAD838F9F7A2}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Average Wait Time per Day of Week and Season' width='192'>
+      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
+      AQiymv8PM/6er9YoTS0AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Average Wait Time per Urgency Level and Time of Day' width='192'>
+      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
+      PwDJUKLEyqeSMwAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Average Wait Time vs Patient Satisfaction and Urgency Level' width='192'>
+      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
+      /S8f7gIiOunbbQAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Average Wait Time vs Specialist Availability and Region' width='192'>
+      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
+      CWy+z85rAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Average Wait Times per Hospital and Region' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Average Wait Times vs Patient Outcome and Urgency Level' width='192'>
+      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
+      ARC2JgEQtiYBELYmARC2JgEQtiYBELYmARC2JgEQtiYBELYmARC2JgEQtiYBELYmARC2JgEQ
+      tiYBELYmARC2JgEQtiYBELYmARC2JgEQtpbXznCfbyql6zqqqgLkGktJ5wmxnOQtAOl0mvb2
+      doqKinjsscdoa2tDURRUVWXbtm10dnaiqipPPPEEJSUl+VqsEF9J3gJgGAbf+MY3uH79OqZp
+      Eo1GaWlp4erVqwwODrJ//35CoRATExNs2rRJGnAVyPx2NQxjiSt5NOQtAB6PZ0EzJo/Hw+3b
+      t3G73RiGgcvlQtM0EolEri8kIEHIs/ltq+v6UpfySMhbAFKpFJOTk8zMzBCJRJibm6OpqYme
+      nh78fj+Dg4PEYjG2bt2Kw+GQzmUFMt/M1+l0LnUpj4S8dYdOJBKMjo6SzWaprKwkk8kwNTXF
+      6tWrKS8vZ3BwELfbTV1dnez8BfSodIdeDr7QHVo8+iQA1imKosihWNiaBEDYmgRA2JoEQNia
+      BEDYmgRA2JoEQNiaBEDYmgRA2JoEQNiaBEDYmgRA2JoEQNiaBEDYmgRA2JoEQNiaBEDYmgRA
+      2JoEQNiaBEDYmgRA2JoEQNhaXgOQyWSYnZ0FIJvN0t/fz+TkJIZhcPfuXSYnJ6UTnFhW8haA
+      ubk5PvzwQ65du4ZpmnR0dOT+dufOHUZHR+np6SEcDudrkUJ8ZXntDfrEE09w+fJldF1nYGAA
+      TdNQVZVgMMjWrVsJBoNMTU3h9/tzvUGliWv+GYZBOp1e6jIeCXkLgKqqCxqyrlq1ih07dnDx
+      4kVcLhfw70a4823TAWmTWAAOhwNNy+tHP6xYedtKMzMzXL9+nYGBAdauXUtRURHd3d0kEgk2
+      btxIR0cHuq5z5MiRBR+QIR+WkV/zBxk5sFiTt96g858OA//eqZPJJG63G0VRSKfTuSOT7PSF
+      I71BrVMURcnbGeB+H31UVFSU+97tdudrUULkjZwnha1JAIStSQCErUkAhK1JAIStSQCErUkA
+      hK1JAIStSQCErUkAhK1JAIStSQCErUkAhK1JAIStSQCErUkAhK1JAIStSQCErUkAhK1JAISt
+      SQCErUkAhK3lNQCGYZDJZHI/Z7NZMpkMpmkSj8dJpVLSHFcsK3nrC5RKpWhvb6eoqIiDBw+i
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      AABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
